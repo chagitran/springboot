@@ -1,0 +1,4 @@
+formapp:
+  messages:
+    regSucess: Registration Sucessful Sit 
+    regFailure: Registration failure  Sit

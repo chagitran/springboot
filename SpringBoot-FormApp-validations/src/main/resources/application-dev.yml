@@ -1,0 +1,19 @@
+formapp:
+  messages:
+    regSucess: Registration Sucessful Dev 
+    regFailure: Registration failure Dev
+    
+    
+## DB details
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/XE
+    username: charan
+    password: charanc
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"         

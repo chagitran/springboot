@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+  servlet:
+    context-path: /SpringBootFormApp
+
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+
+  profiles:
+    active: dev 
+    

@@ -1,0 +1,2929 @@
+{
+	"threads": [
+		{
+			"threadName": "http-nio-9090-Acceptor",
+			"threadId": 150,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": true,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "accept0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.nio.ch.ServerSocketChannelImpl",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.ServerSocketChannelImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.ServerSocketChannelImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "serverSocketAccept",
+					"fileName": "NioEndpoint.java",
+					"lineNumber": 463,
+					"className": "org.apache.tomcat.util.net.NioEndpoint",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "serverSocketAccept",
+					"fileName": "NioEndpoint.java",
+					"lineNumber": 73,
+					"className": "org.apache.tomcat.util.net.NioEndpoint",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "Acceptor.java",
+					"lineNumber": 95,
+					"className": "org.apache.tomcat.util.net.Acceptor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "java.lang.Object",
+					"identityHashCode": 131632649,
+					"lockedStackDepth": 2,
+					"lockedStackFrame": {
+						"methodName": "accept",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "sun.nio.ch.ServerSocketChannelImpl",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "http-nio-9090-ClientPoller",
+			"threadId": 149,
+			"blockedTime": -1,
+			"blockedCount": 2,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": true,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "poll0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.nio.ch.WindowsSelectorImpl$SubSelector",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "poll",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.WindowsSelectorImpl$SubSelector",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "access$400",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.WindowsSelectorImpl$SubSelector",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doSelect",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.WindowsSelectorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "lockAndDoSelect",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.SelectorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "select",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.SelectorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "NioEndpoint.java",
+					"lineNumber": 708,
+					"className": "org.apache.tomcat.util.net.NioEndpoint$Poller",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "sun.nio.ch.Util$3",
+					"identityHashCode": 153055362,
+					"lockedStackDepth": 4,
+					"lockedStackFrame": {
+						"methodName": "lockAndDoSelect",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "sun.nio.ch.SelectorImpl",
+						"nativeMethod": false
+					}
+				},
+				{
+					"className": "java.util.Collections$UnmodifiableSet",
+					"identityHashCode": 220259705,
+					"lockedStackDepth": 4,
+					"lockedStackFrame": {
+						"methodName": "lockAndDoSelect",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "sun.nio.ch.SelectorImpl",
+						"nativeMethod": false
+					}
+				},
+				{
+					"className": "sun.nio.ch.WindowsSelectorImpl",
+					"identityHashCode": 1210219193,
+					"lockedStackDepth": 4,
+					"lockedStackFrame": {
+						"methodName": "lockAndDoSelect",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "sun.nio.ch.SelectorImpl",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "http-nio-9090-exec-10",
+			"threadId": 148,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 2,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-exec-9",
+			"threadId": 147,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 3,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-exec-8",
+			"threadId": 146,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 2,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-exec-7",
+			"threadId": 145,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 3,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-exec-6",
+			"threadId": 144,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 2,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "dumpThreads0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.management.ThreadImpl",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "dumpAllThreads",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.management.ThreadImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "threadDump",
+					"fileName": "ThreadDumpEndpoint.java",
+					"lineNumber": 39,
+					"className": "org.springframework.boot.actuate.management.ThreadDumpEndpoint",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.reflect.NativeMethodAccessorImpl",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "invoke",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.reflect.NativeMethodAccessorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.reflect.DelegatingMethodAccessorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.reflect.Method",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invokeMethod",
+					"fileName": "ReflectionUtils.java",
+					"lineNumber": 282,
+					"className": "org.springframework.util.ReflectionUtils",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": "ReflectiveOperationInvoker.java",
+					"lineNumber": 76,
+					"className": "org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": "AbstractDiscoveredOperation.java",
+					"lineNumber": 60,
+					"className": "org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "handle",
+					"fileName": "AbstractWebMvcEndpointHandlerMapping.java",
+					"lineNumber": 278,
+					"className": "org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "handle",
+					"fileName": "AbstractWebMvcEndpointHandlerMapping.java",
+					"lineNumber": 334,
+					"className": "org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.reflect.NativeMethodAccessorImpl",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "invoke",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.reflect.NativeMethodAccessorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.reflect.DelegatingMethodAccessorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.reflect.Method",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doInvoke",
+					"fileName": "InvocableHandlerMethod.java",
+					"lineNumber": 190,
+					"className": "org.springframework.web.method.support.InvocableHandlerMethod",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invokeForRequest",
+					"fileName": "InvocableHandlerMethod.java",
+					"lineNumber": 138,
+					"className": "org.springframework.web.method.support.InvocableHandlerMethod",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invokeAndHandle",
+					"fileName": "ServletInvocableHandlerMethod.java",
+					"lineNumber": 105,
+					"className": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invokeHandlerMethod",
+					"fileName": "RequestMappingHandlerAdapter.java",
+					"lineNumber": 893,
+					"className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "handleInternal",
+					"fileName": "RequestMappingHandlerAdapter.java",
+					"lineNumber": 798,
+					"className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "handle",
+					"fileName": "AbstractHandlerMethodAdapter.java",
+					"lineNumber": 87,
+					"className": "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doDispatch",
+					"fileName": "DispatcherServlet.java",
+					"lineNumber": 1040,
+					"className": "org.springframework.web.servlet.DispatcherServlet",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doService",
+					"fileName": "DispatcherServlet.java",
+					"lineNumber": 943,
+					"className": "org.springframework.web.servlet.DispatcherServlet",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "processRequest",
+					"fileName": "FrameworkServlet.java",
+					"lineNumber": 1006,
+					"className": "org.springframework.web.servlet.FrameworkServlet",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doGet",
+					"fileName": "FrameworkServlet.java",
+					"lineNumber": 898,
+					"className": "org.springframework.web.servlet.FrameworkServlet",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "service",
+					"fileName": "HttpServlet.java",
+					"lineNumber": 634,
+					"className": "javax.servlet.http.HttpServlet",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "service",
+					"fileName": "FrameworkServlet.java",
+					"lineNumber": 883,
+					"className": "org.springframework.web.servlet.FrameworkServlet",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "service",
+					"fileName": "HttpServlet.java",
+					"lineNumber": 741,
+					"className": "javax.servlet.http.HttpServlet",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "internalDoFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 231,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 166,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "WsFilter.java",
+					"lineNumber": 53,
+					"className": "org.apache.tomcat.websocket.server.WsFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "internalDoFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 193,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 166,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilterInternal",
+					"fileName": "HttpTraceFilter.java",
+					"lineNumber": 88,
+					"className": "org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "OncePerRequestFilter.java",
+					"lineNumber": 119,
+					"className": "org.springframework.web.filter.OncePerRequestFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "internalDoFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 193,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 166,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilterInternal",
+					"fileName": "RequestContextFilter.java",
+					"lineNumber": 100,
+					"className": "org.springframework.web.filter.RequestContextFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "OncePerRequestFilter.java",
+					"lineNumber": 119,
+					"className": "org.springframework.web.filter.OncePerRequestFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "internalDoFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 193,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 166,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilterInternal",
+					"fileName": "FormContentFilter.java",
+					"lineNumber": 93,
+					"className": "org.springframework.web.filter.FormContentFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "OncePerRequestFilter.java",
+					"lineNumber": 119,
+					"className": "org.springframework.web.filter.OncePerRequestFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "internalDoFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 193,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 166,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilterInternal",
+					"fileName": "HiddenHttpMethodFilter.java",
+					"lineNumber": 94,
+					"className": "org.springframework.web.filter.HiddenHttpMethodFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "OncePerRequestFilter.java",
+					"lineNumber": 119,
+					"className": "org.springframework.web.filter.OncePerRequestFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "internalDoFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 193,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 166,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "filterAndRecordMetrics",
+					"fileName": "WebMvcMetricsFilter.java",
+					"lineNumber": 114,
+					"className": "org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilterInternal",
+					"fileName": "WebMvcMetricsFilter.java",
+					"lineNumber": 104,
+					"className": "org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "OncePerRequestFilter.java",
+					"lineNumber": 119,
+					"className": "org.springframework.web.filter.OncePerRequestFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "internalDoFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 193,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 166,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilterInternal",
+					"fileName": "CharacterEncodingFilter.java",
+					"lineNumber": 201,
+					"className": "org.springframework.web.filter.CharacterEncodingFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "OncePerRequestFilter.java",
+					"lineNumber": 119,
+					"className": "org.springframework.web.filter.OncePerRequestFilter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "internalDoFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 193,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doFilter",
+					"fileName": "ApplicationFilterChain.java",
+					"lineNumber": 166,
+					"className": "org.apache.catalina.core.ApplicationFilterChain",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": "StandardWrapperValve.java",
+					"lineNumber": 202,
+					"className": "org.apache.catalina.core.StandardWrapperValve",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": "StandardContextValve.java",
+					"lineNumber": 96,
+					"className": "org.apache.catalina.core.StandardContextValve",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": "AuthenticatorBase.java",
+					"lineNumber": 526,
+					"className": "org.apache.catalina.authenticator.AuthenticatorBase",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": "StandardHostValve.java",
+					"lineNumber": 139,
+					"className": "org.apache.catalina.core.StandardHostValve",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": "ErrorReportValve.java",
+					"lineNumber": 92,
+					"className": "org.apache.catalina.valves.ErrorReportValve",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "invoke",
+					"fileName": "StandardEngineValve.java",
+					"lineNumber": 74,
+					"className": "org.apache.catalina.core.StandardEngineValve",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "service",
+					"fileName": "CoyoteAdapter.java",
+					"lineNumber": 343,
+					"className": "org.apache.catalina.connector.CoyoteAdapter",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "service",
+					"fileName": "Http11Processor.java",
+					"lineNumber": 408,
+					"className": "org.apache.coyote.http11.Http11Processor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "process",
+					"fileName": "AbstractProcessorLight.java",
+					"lineNumber": 66,
+					"className": "org.apache.coyote.AbstractProcessorLight",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "process",
+					"fileName": "AbstractProtocol.java",
+					"lineNumber": 860,
+					"className": "org.apache.coyote.AbstractProtocol$ConnectionHandler",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doRun",
+					"fileName": "NioEndpoint.java",
+					"lineNumber": 1589,
+					"className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "SocketProcessorBase.java",
+					"lineNumber": 49,
+					"className": "org.apache.tomcat.util.net.SocketProcessorBase",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper",
+					"identityHashCode": 2040592377,
+					"lockedStackDepth": 70,
+					"lockedStackFrame": {
+						"methodName": "run",
+						"fileName": "SocketProcessorBase.java",
+						"lineNumber": 49,
+						"className": "org.apache.tomcat.util.net.SocketProcessorBase",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [
+				{
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"identityHashCode": 747534578
+				}
+			],
+			"lockInfo": null
+		},
+		{
+			"threadName": "http-nio-9090-exec-5",
+			"threadId": 143,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 4,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-exec-4",
+			"threadId": 142,
+			"blockedTime": -1,
+			"blockedCount": 1,
+			"waitedTime": -1,
+			"waitedCount": 4,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-exec-3",
+			"threadId": 141,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 3,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-exec-2",
+			"threadId": 140,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 4,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-exec-1",
+			"threadId": 139,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 4,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b490d72",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.LinkedBlockingQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 107,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": "TaskQueue.java",
+					"lineNumber": 33,
+					"className": "org.apache.tomcat.util.threads.TaskQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 189336946
+			}
+		},
+		{
+			"threadName": "http-nio-9090-BlockPoller",
+			"threadId": 138,
+			"blockedTime": -1,
+			"blockedCount": 17,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": true,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "poll0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.nio.ch.WindowsSelectorImpl$SubSelector",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "poll",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.WindowsSelectorImpl$SubSelector",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "access$400",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.WindowsSelectorImpl$SubSelector",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doSelect",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.WindowsSelectorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "lockAndDoSelect",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.SelectorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "select",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.nio.ch.SelectorImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "NioBlockingSelector.java",
+					"lineNumber": 313,
+					"className": "org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "sun.nio.ch.Util$3",
+					"identityHashCode": 1931599513,
+					"lockedStackDepth": 4,
+					"lockedStackFrame": {
+						"methodName": "lockAndDoSelect",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "sun.nio.ch.SelectorImpl",
+						"nativeMethod": false
+					}
+				},
+				{
+					"className": "java.util.Collections$UnmodifiableSet",
+					"identityHashCode": 671974902,
+					"lockedStackDepth": 4,
+					"lockedStackFrame": {
+						"methodName": "lockAndDoSelect",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "sun.nio.ch.SelectorImpl",
+						"nativeMethod": false
+					}
+				},
+				{
+					"className": "sun.nio.ch.WindowsSelectorImpl",
+					"identityHashCode": 1802256152,
+					"lockedStackDepth": 4,
+					"lockedStackFrame": {
+						"methodName": "lockAndDoSelect",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "sun.nio.ch.SelectorImpl",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "File Watcher",
+			"threadId": 137,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 778,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "TIMED_WAITING",
+			"stackTrace": [
+				{
+					"methodName": "sleep",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.lang.Thread",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "scan",
+					"fileName": "FileSystemWatcher.java",
+					"lineNumber": 255,
+					"className": "org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "FileSystemWatcher.java",
+					"lineNumber": 239,
+					"className": "org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "HikariPool-5 housekeeper",
+			"threadId": 135,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 19,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@150d12b3",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "TIMED_WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "parkNanos",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "awaitNanos",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 353178291
+			}
+		},
+		{
+			"threadName": "container-0",
+			"threadId": 133,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 40,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "TIMED_WAITING",
+			"stackTrace": [
+				{
+					"methodName": "sleep",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.lang.Thread",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "await",
+					"fileName": "StandardServer.java",
+					"lineNumber": 570,
+					"className": "org.apache.catalina.core.StandardServer",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TomcatWebServer.java",
+					"lineNumber": 179,
+					"className": "org.springframework.boot.web.embedded.tomcat.TomcatWebServer$1",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "Catalina-utility-2",
+			"threadId": 132,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 636,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6825d39d",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "await",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 1747309469
+			}
+		},
+		{
+			"threadName": "Catalina-utility-1",
+			"threadId": 131,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 612,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6825d39d",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "TIMED_WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "parkNanos",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "awaitNanos",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": "TaskThread.java",
+					"lineNumber": 61,
+					"className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 1747309469
+			}
+		},
+		{
+			"threadName": "RMI TCP Connection(2)-127.0.0.1",
+			"threadId": 47,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": true,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "socketRead0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.net.SocketInputStream",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "socketRead",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.SocketInputStream",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "read",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.SocketInputStream",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "read",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.SocketInputStream",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "fill",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.io.BufferedInputStream",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "read",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.io.BufferedInputStream",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "read",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.io.FilterInputStream",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "handleMessages",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run0",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$ConnectionHandler",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "lambda$run$0",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$ConnectionHandler",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$313/1613747671",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "doPrivileged",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.security.AccessController",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$ConnectionHandler",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "java.io.BufferedInputStream",
+					"identityHashCode": 742644058,
+					"lockedStackDepth": 5,
+					"lockedStackFrame": {
+						"methodName": "read",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "java.io.BufferedInputStream",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [
+				{
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"identityHashCode": 1355107469
+				}
+			],
+			"lockInfo": null
+		},
+		{
+			"threadName": "DestroyJavaVM",
+			"threadId": 46,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "Live Reload Server",
+			"threadId": 30,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": true,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "accept0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.net.DualStackPlainSocketImpl",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "socketAccept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.DualStackPlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.AbstractPlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.PlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "implAccept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.ServerSocket",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.ServerSocket",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "acceptConnections",
+					"fileName": "LiveReloadServer.java",
+					"lineNumber": 144,
+					"className": "org.springframework.boot.devtools.livereload.LiveReloadServer",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "org.springframework.boot.devtools.livereload.LiveReloadServer$$Lambda$566/571863361",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "java.net.SocksSocketImpl",
+					"identityHashCode": 652060469,
+					"lockedStackDepth": 3,
+					"lockedStackFrame": {
+						"methodName": "accept",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "java.net.PlainSocketImpl",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "JMX server connection timeout 21",
+			"threadId": 21,
+			"blockedTime": -1,
+			"blockedCount": 2213,
+			"waitedTime": -1,
+			"waitedCount": 2214,
+			"lockName": "[I@5b38a1d7",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "TIMED_WAITING",
+			"stackTrace": [
+				{
+					"methodName": "wait",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.lang.Object",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "[I",
+				"identityHashCode": 1530438103
+			}
+		},
+		{
+			"threadName": "RMI Scheduler(0)",
+			"threadId": 20,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 9,
+			"lockName": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1d473816",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "TIMED_WAITING",
+			"stackTrace": [
+				{
+					"methodName": "park",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "sun.misc.Unsafe",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "parkNanos",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.LockSupport",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "awaitNanos",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "take",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "getTask",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "runWorker",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+				"identityHashCode": 491206678
+			}
+		},
+		{
+			"threadName": "RMI TCP Accept-0",
+			"threadId": 13,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": true,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "accept0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.net.DualStackPlainSocketImpl",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "socketAccept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.DualStackPlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.AbstractPlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.PlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "implAccept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.ServerSocket",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.ServerSocket",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.management.jmxremote.LocalRMIServerSocketFactory$1",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "executeAcceptLoop",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$AcceptLoop",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$AcceptLoop",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "java.net.SocksSocketImpl",
+					"identityHashCode": 796703725,
+					"lockedStackDepth": 3,
+					"lockedStackFrame": {
+						"methodName": "accept",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "java.net.PlainSocketImpl",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "RMI TCP Accept-52909",
+			"threadId": 12,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": true,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "accept0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.net.DualStackPlainSocketImpl",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "socketAccept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.DualStackPlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.AbstractPlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.PlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "implAccept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.ServerSocket",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.ServerSocket",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "executeAcceptLoop",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$AcceptLoop",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$AcceptLoop",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "java.net.SocksSocketImpl",
+					"identityHashCode": 1691567416,
+					"lockedStackDepth": 3,
+					"lockedStackFrame": {
+						"methodName": "accept",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "java.net.PlainSocketImpl",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "RMI TCP Accept-0",
+			"threadId": 11,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": true,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [
+				{
+					"methodName": "accept0",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.net.DualStackPlainSocketImpl",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "socketAccept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.DualStackPlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.AbstractPlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.PlainSocketImpl",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "implAccept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.ServerSocket",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "accept",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.net.ServerSocket",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "executeAcceptLoop",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$AcceptLoop",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "sun.rmi.transport.tcp.TCPTransport$AcceptLoop",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Thread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [
+				{
+					"className": "java.net.SocksSocketImpl",
+					"identityHashCode": 2063300204,
+					"lockedStackDepth": 3,
+					"lockedStackFrame": {
+						"methodName": "accept",
+						"fileName": null,
+						"lineNumber": -1,
+						"className": "java.net.PlainSocketImpl",
+						"nativeMethod": false
+					}
+				}
+			],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "Attach Listener",
+			"threadId": 5,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "Signal Dispatcher",
+			"threadId": 4,
+			"blockedTime": -1,
+			"blockedCount": 0,
+			"waitedTime": -1,
+			"waitedCount": 0,
+			"lockName": null,
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "RUNNABLE",
+			"stackTrace": [],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": null
+		},
+		{
+			"threadName": "Finalizer",
+			"threadId": 3,
+			"blockedTime": -1,
+			"blockedCount": 343,
+			"waitedTime": -1,
+			"waitedCount": 100,
+			"lockName": "java.lang.ref.ReferenceQueue$Lock@5e5866ad",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "wait",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.lang.Object",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "remove",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.ref.ReferenceQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "remove",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.ref.ReferenceQueue",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.ref.Finalizer$FinalizerThread",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.lang.ref.ReferenceQueue$Lock",
+				"identityHashCode": 1582851757
+			}
+		},
+		{
+			"threadName": "Reference Handler",
+			"threadId": 2,
+			"blockedTime": -1,
+			"blockedCount": 53,
+			"waitedTime": -1,
+			"waitedCount": 20,
+			"lockName": "java.lang.ref.Reference$Lock@14b10d58",
+			"lockOwnerId": -1,
+			"lockOwnerName": null,
+			"inNative": false,
+			"suspended": false,
+			"threadState": "WAITING",
+			"stackTrace": [
+				{
+					"methodName": "wait",
+					"fileName": null,
+					"lineNumber": -2,
+					"className": "java.lang.Object",
+					"nativeMethod": true
+				},
+				{
+					"methodName": "wait",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.Object",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "tryHandlePending",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.ref.Reference",
+					"nativeMethod": false
+				},
+				{
+					"methodName": "run",
+					"fileName": null,
+					"lineNumber": -1,
+					"className": "java.lang.ref.Reference$ReferenceHandler",
+					"nativeMethod": false
+				}
+			],
+			"lockedMonitors": [],
+			"lockedSynchronizers": [],
+			"lockInfo": {
+				"className": "java.lang.ref.Reference$Lock",
+				"identityHashCode": 347147608
+			}
+		}
+	]
+}

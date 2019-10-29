@@ -1,0 +1,1 @@
+      jmap -dump:live,format=b,file=D://Workspace/heapdump.hrof 12072
